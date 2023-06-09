@@ -1,12 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ron Brown</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <h1>Ron Brown</h1>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <div class="hero-text">
+        <h1>Ron Brown</h1>
+        <p>
+          I am a System Administrator and Software Developer with a drive for
+          using new and existing technologies to solve problems.
+        </p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I have a bachelor's degree in Software Development and an associate
+          degree in System Administration. I have experience with a variety of
+          programming languages and technologies. I am currently working as a
+          System Administrator for the Lower Brule Sioux Tribe, of which I am
+          also a member. I am looking to expand my knowledge and experience in a
+          DevOps role.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>This is a description of my first project.</p>
+        </div>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>This is a description of my second project.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>
+          If you'd like to get in touch with me, please fill out the form below:
+        </p>
+        <form>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,63 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Hero section styles */
+#hero {
+  background-color: #f5f5f5;
+  padding: 100px 0;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+/* About section styles */
+#about {
+  background-color: #fff;
+  padding: 100px 0;
+}
+
+/* Projects section styles */
+#projects {
+  background-color: #f5f5f5;
+  padding: 100px 0;
+}
