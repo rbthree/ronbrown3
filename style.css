@@ -20,8 +20,16 @@ body {
   margin: 0 auto;
   padding: 40px;
 }
+.container li {
+  list-style: none;
+}
+
+.container li img {
+  padding-right: 10px;
+}
 
 /* Header styles */
+
 header {
   background-color: #333;
   color: #fff;
@@ -64,6 +72,19 @@ nav ul li a {
   color: #fff;
   background-color: #181a1b;
   padding: 100px 0;
+}
+
+/* Contact section styles */
+#contact {
+  color: #fff;
+  background-color: #181a1b;
+  padding: 100px 0;
+}
+
+#contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Projects section styles */
