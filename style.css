@@ -7,6 +7,7 @@
 
 /* Global styles */
 body {
+  color: #fff;
   font-family: Arial, sans-serif;
   background-color: #1e2021;
   line-height: 1.6;
@@ -19,11 +20,15 @@ h1 {
   font-size: 3em;
 }
 
+li {
+  list-style: none;
+  align-items: center;
+}
+
 /* Header styles */
 
 header {
   background-color: #333;
-  color: #fff;
   padding: 20px;
 }
 
@@ -47,12 +52,12 @@ nav ul {
 
 /* Hero section styles */
 #hero {
-  color: #fff;
   background-color: #1e2021;
   padding: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 407px;
 }
 
 #hero img {
@@ -68,7 +73,6 @@ nav ul {
 
 /* About section styles */
 #about {
-  color: #fff;
   background-color: #181a1b;
   padding: 100px 0;
   display: flex;
@@ -81,40 +85,30 @@ button {
   border-radius: 50px;
 }
 
-.container {
+#about .container {
   display: flex;
   flex-direction: column;
   padding: 100px;
   max-width: 75%;
 }
 
-.container li {
-  list-style: none;
-  align-items: center;
-}
-
-.container li img {
-  padding-right: 10px;
-  padding-top: 10px;
-}
-
 
 /* Contact section styles */
 #contact {
-  color: #fff;
   background-color: #181a1b;
   padding: 100px 0;
+  min-height: 590px;
 }
 
 #contact .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 120px;
 }
 
 /* Footer styles */
 footer {
-  color: #fff;
   background-color: #333;
   text-align: center;
   margin-top: auto;
