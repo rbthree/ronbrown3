@@ -149,3 +149,19 @@ footer {
 .source-link:hover {
   color: #a0db8e;
 }
+
+@media screen and (max-width: 715px) {
+  #hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1 {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  #about .container {
+    padding: 0;
+  }
+}
