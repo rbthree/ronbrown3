@@ -123,12 +123,15 @@ button:hover {
   font-size: 1.5rem;
 }
 
-
 .contact-container {
   align-items: center;
 }
 .contact-container span {
   padding-left: 10px;
+}
+
+.icon {
+  color: #a0db8e;
 }
 
 /* Footer styles */
