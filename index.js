@@ -36,10 +36,12 @@ function nextCard() {
 
 function addProjects() {
   let container = document.querySelector(".container");
-  let div = document.createElement("div");
-  div.setAttribute("id", "project-div");
-  div.textContent = "TEST";
-  container.appendChild(div);
+  let projectDiv = document.createElement("div");
+  projectDiv.setAttribute("id", "project-div");
+  container.appendChild(projectDiv);
+  let project = document.createElement("div");
+  project.textContent = "TEST";
+  projectDiv.appendChild(project);
 }
 
 function removeProjects(projectDiv) {
