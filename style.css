@@ -101,7 +101,7 @@ nav ul {
   padding: 0 2em;
   min-height: 40vh;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 1000px;
 }
 
 /* Project section styles */
@@ -116,7 +116,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 80%;
+  max-width: 1000px;
   padding: 0 2em;
 }
 
