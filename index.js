@@ -1,6 +1,18 @@
 let button = document.querySelector("button");
-button.addEventListener("click", changeContent);
+let about = document.querySelector("#about");
+let projects = document.querySelector("#projects");
 
-function nextCard() {}
+function handleButton() {
+  projects.style.display === "none" ? showProjects() : showAbout();
+}
+function showProjects() {
+  projects.style.display = "flex";
+  about.style.display = "none";
+  button.innerText = "<";
+}
 
-function changeContent() {}
+function showAbout() {
+  about.style.display = "flex";
+  projects.style.display = "none";
+  button.innerText = ">";
+}

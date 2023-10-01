@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ron Brown</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header>
@@ -30,8 +30,8 @@
       </div>
     </section>
 
-    <section id="about">
-      <div class="container">
+    <section id="about" style="display: flex">
+      <div class="about-container">
         <h2>About Me</h2>
         <p>
           I am a
@@ -50,8 +50,8 @@
       </div>
     </section>
 
-    <section id="projects">
-      <div class="container">
+    <section id="projects" style="display: none">
+      <div class="projects-container">
         <h2>Projects</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at
@@ -63,7 +63,7 @@
     </section>
 
     <div class="button-div">
-      <button onclick="nextCard()">></button>
+      <button onclick="handleButton()">></button>
     </div>
 
     <footer>

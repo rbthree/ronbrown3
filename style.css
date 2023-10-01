@@ -44,30 +44,14 @@ a:hover {
   cursor: pointer;
 }
 
-button {
-  background: transparent;
-  font-size: 5rem;
-  border: none;
-  color: #fff;
-}
-
-button:hover {
-  color: #a0db8e;
-}
-
-.button-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #181a1b;
-  padding-bottom: 3.5em;
-}
-
 /* Header styles */
 
 header {
   background-color: #333;
-  padding: 1.5em;
+  min-height: 5vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 header a {
@@ -83,11 +67,10 @@ nav ul {
 /* Hero section styles */
 #hero {
   background-color: #1e2021;
-  padding: 6em;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 32vh;
+  min-height: 30vh;
 }
 
 .hero-text {
@@ -104,18 +87,19 @@ nav ul {
 /* About section styles */
 #about {
   background-color: #181a1b;
-  padding: 5em 0 3.5em 0;
-  display: none;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
 #about p {
   opacity: .8;
 }
 
-#about .container {
+.about-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
+  min-height: 40vh;
   flex-direction: column;
   max-width: 80%;
 }
@@ -123,55 +107,78 @@ nav ul {
 /* Project section styles */
 #projects {
   background-color: #181a1b;
-  padding: 5em 0 3.5em 0;
-  display: flex;
+  justify-content: center;
+}
+
+.projects-container {
+  min-height: 40vh;
   flex-direction: column;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  max-width: 80%;
+  padding: 0 2em;
 }
 
 #projects p {
   opacity: .8;
 }
 
-#projects .container {
-  display: flex;
-  flex-direction: column;
-  max-width: 80%;
-}
+/* Button styles */
 
-
-/* Contact section styles */
-#contact {
-  background-color: #181a1b;
-  min-height: 33vh;
+.button-div {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  background-color: #181a1b;
+  min-height: 20vh;
 }
 
-#contact a {
-  font-size: 1.5rem;
+button {
+  background: transparent;
+  font-size: 5rem;
+  border: none;
+  color: #fff;
 }
 
-#contact span {
-  padding-left: 1.5em;
+button:hover {
+  color: #a0db8e;
 }
 
 /* Footer styles */
+
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #333;
   text-align: center;
   margin-top: auto;
-  padding: 1.5em;
+  min-height: 5vh;
 }
 
 .source-link {
   text-decoration: underline;
 }
-
 .source-link:hover {
   color: #a0db8e;
+
+  /* Contact section styles */
+  #contact {
+    background-color: #181a1b;
+    min-height: 33vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #contact a {
+    font-size: 1.5rem;
+  }
+
+  #contact span {
+    padding-left: 1.5em;
+  }
 }
 
 @media screen and (max-width: 715px) {
