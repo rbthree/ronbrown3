@@ -26,6 +26,7 @@ h1 {
 
 h2 {
   color: #a0db8e;
+  margin-bottom: 1em;
 }
 
 li {
@@ -108,20 +109,23 @@ nav ul {
 #projects {
   background-color: #181a1b;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 40vh;
+  padding-top: 2em;
 }
 
 .projects-container {
-  min-height: 40vh;
-  flex-direction: column;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  max-width: 1000px;
-  padding: 0 2em;
+
 }
 
-#projects p {
-  opacity: .8;
+.project-img {
+  border: 1px solid white;
+  height: 12vh;
+  margin: 1em 0;
 }
 
 /* Button styles */
@@ -190,7 +194,20 @@ footer {
 
 @media screen and (max-width: 715px) {
   #hero {
+    margin-top: 2em;
     flex-direction: column;
+  }
+
+  #hero img {
+    margin-bottom: 2em;
+  }
+
+  .hero-text {
+    margin-right: 0;
+  }
+
+  #about {
+    padding-top: 2em;
   }
 
   h1 {
