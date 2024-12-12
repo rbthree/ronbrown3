@@ -18,6 +18,7 @@ body {
 
 .green {
     color: #a0db8e;
+    font-weight: bold;
 }
 
 h1 {
@@ -25,8 +26,13 @@ h1 {
 }
 
 h2 {
+  font-size: 1.8em;
   color: #a0db8e;
   margin-bottom: 1em;
+}
+
+#about p {
+  font-size: 1.3em;
 }
 
 li {
@@ -103,33 +109,6 @@ nav ul {
   min-height: 40vh;
   flex-direction: column;
   max-width: 1000px;
-}
-
-/* Project section styles */
-#projects {
-  background-color: #181a1b;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  min-height: 40vh;
-  padding-top: 2em;
-}
-
-.projects-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-}
-
-#projects p {
-  margin-bottom: 3em;
-}
-
-.project-img {
-  border: 1px solid white;
-  height: 12vh;
-  margin: 1em 0;
 }
 
 /* Button styles */
