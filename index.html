@@ -1,61 +1,219 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ron Brown | System Administrator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ron Brown</title>
+
+    <script
+      src="https://kit.fontawesome.com/473bce859b.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="style.css" />
-    <script src="index.js" defer></script>
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="container">
+        <a href="#" class="nav-logo">Ron Brown</a>
         <ul>
-          <li><a href="RonBrown_Resume_0109.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <!-- <li><a href="#projects">Projects</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              href="RonBrown_Resume_0109.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="nav-resume"
+              >Resume</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
-    <section id="hero">
-      <div class="hero-text">
-        <h1><span class="green">Let's build</span> <i>something great</i>.</h1>
-      </div>
-      <div class="hero-image">
-        <img src="img/ron.jpg" alt="Ron Brown" />
-      </div>
-    </section>
+    <main>
+      <section id="hero">
+        <div class="hero-bg-animation"></div>
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h1>
+              <span class="highlight">Let's build</span> something great.
+            </h1>
+            <p class="subtitle">
+              IT Professional with a passion for automation and network 
+              security. Seeking my next professional challenge.
+            </p>
+            <div class="hero-actions">
+              <!-- <a href="#projects" class="btn btn-primary">View Projects</a> -->
+              <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="img/ron.jpg" alt="A portrait of Ron Brown" />
+          </div>
+        </div>
+      </section>
 
-    <section id="about" style="display: flex">
-      <div class="about-container">
-        <h2>About Me</h2>
-          <p>I'm <span class="green big">Ron Brown</span>, a System Administrator with expertise in IT infrastructure and a 
-          focus on <span class="green">building reliable, efficient systems</span>.</p>
-          <br />
-          <p>I've <span class="green">led hybrid environment migrations</span>, streamlined networks, and implemented 
-          <span class="green">secure cloud solutions</span>.</p>
-          <br />
-          <p>My goal is to transition into a <span class="green">DevOps</span> role, leveraging automation and system 
-          optimization to <span class="green">drive results</span>.</p>
-          <br />
-          <p>Outside of work, I enjoy discovering <span class="green">new music</span> and 
-          exploring <span class="green">emerging technologies</span>.</p>
-        </p>
-      </div>
-    </section>
+      <section id="about" class="section-fade-in">
+        <div class="container">
+          <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+              As a System and Network Administrator, I have a strong background in managing the complexities of both <span class="highlight">on-premise and hybrid IT environments</span>. My experience is centered on core server administration, network security, and virtualization. I'm proficient in administering essential services like Active Directory and using <span class="highlight">scripting to automate</span> key deployment, configuration, and maintenance workflows.
+            </p>
+            <p>
+              My professional philosophy is to build systems that are not just functional, but also <span class="highlight">efficient, scalable, and secure</span>. I focus on implementing robust and maintainable solutions—from hardening a network perimeter to streamlining server deployment—that are designed to support an organization's long-term success.
+            </p>
+            <p>
+              I am currently seeking a new role where I can apply my skills to <span class="highlight">manage and modernize</span> an organization's critical IT infrastructure.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-fade-in">
+        <div class="container">
+          <h2>My Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-badge"><i class="fab fa-aws"></i> AWS</div>
+            <div class="skill-badge"><i class="fab fa-docker"></i> Docker</div>
+            <div class="skill-badge"><i class="fab fa-linux"></i> Linux</div>
+            <div class="skill-badge"><i class="fab fa-jenkins"></i> Jenkins</div>
+            <div class="skill-badge"><i class="fas fa-server"></i> System Admin</div>
+            <div class="skill-badge"><i class="fas fa-cloud"></i> Cloud Computing</div>
+            <div class="skill-badge"><i class="fas fa-network-wired"></i> Networking</div>
+            <div class="skill-badge"><i class="fas fa-shield-alt"></i> Security</div>
+            <div class="skill-badge"><i class="fab fa-git-alt"></i> Git</div>
+            <div class="skill-badge"><i class="fab fa-python"></i> Python</div>
+            <div class="skill-badge"><i class="fas fa-code"></i> Automation</div>
+            <div class="skill-badge"><i class="fas fa-database"></i> SQL</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section id="projects" class="section-fade-in">
+        <div class="container">
+          <h2>My Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <img src="https://placehold.co/400x250" alt="Project 1" />
+              <h3>On-Premise to Hybrid Cloud Infrastructure Migration</h3>
+              <p>
+                Developed a CI/CD pipeline using Jenkins and Docker to automate
+                application deployments, significantly reducing deployment time
+                and errors.
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn btn-project">View Project <i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="btn btn-project-secondary">Code <i class="fab fa-github"></i></a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="https://placehold.co/400x250" alt="Project 2" />
+              <h3>Cloud Infrastructure Migration</h3>
+              <p>
+                Led the migration of on-premise infrastructure to AWS,
+                implementing EC2, S3, and RDS to improve scalability and reduce
+                operational costs.
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn btn-project">View Project <i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="btn btn-project-secondary">Code <i class="fab fa-github"></i></a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="https://placehold.co/400x250" alt="Project 3" />
+              <h3>Monitoring System Implementation</h3>
+              <p>
+                Set up a comprehensive monitoring solution using Prometheus and
+                Grafana to track system performance and alert on anomalies,
+                ensuring high availability.
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn btn-project">View Project <i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="btn btn-project-secondary">Code <i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    -->
+
+      <section id="testimonial" class="section-fade-in">
+        <div class="container">
+          <blockquote>
+            "The goal is to turn data into information, and information into insight."
+            <cite>— Carly Fiorina, former CEO of HP</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="contact" class="section-fade-in">
+        <div class="container">
+          <h2>Let's Connect</h2>
+          <p class="contact-intro">
+            I'm always open to new opportunities, collaborations, or just a friendly chat. Feel free to reach out through any of the channels below!
+          </p>
+          <div class="contact-links">
+            <a href="https://github.com/rbthree" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/ronbrown3rd/" target="_blank" rel="noopener noreferrer" class="contact-item">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:ron@ronbrown3.com" class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>Email Me</span>
+            </a>
+            <div class="contact-item-static">
+              <i class="fas fa-phone"></i>
+              <span>402.750.5926</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
-      <p>
-        View the source code for this website
-        <a href="https://github.com/rbthree/ronbrown3" class="source-link"
-          >here</a
-        >
-        &copy; 2025 Ron Brown. All rights reserved.
-      </p>
+      <div class="container">
+        <p>
+          View the source code for this website
+          <a href="https://github.com/rbthree/ronbrown3" class="source-link"
+            >here</a
+          >
+        </p>
+        <p>&copy; 2025 Ron Brown. All rights reserved.</p>
+      </div>
     </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('.section-fade-in');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+            }
+          });
+        }, { threshold: 0.1 });
+        sections.forEach(section => {
+          observer.observe(section);
+        });
+      });
+    </script>
   </body>
 </html>
